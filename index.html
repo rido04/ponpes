@@ -267,10 +267,17 @@
       .footer-content p {
         margin: 5px 0;
         font-size: 14px;
+        line-height: 1.5;
       }
 
-      .footer-content i {
-        font-style: normal;
+      .footer-content a {
+        text-decoration: none;
+        color: #4285f4;
+        transition: color 0.3s ease;
+      }
+
+      .footer-content a:hover {
+        color: #3367d6;
       }
 
       @media screen and (max-width: 960px) {
@@ -288,6 +295,26 @@
           width: 100%;
           float: none;
           margin-top: 20px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .footer {
+          padding: 15px;
+        }
+
+        .footer-content p {
+          font-size: 12px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .footer {
+          padding: 10px;
+        }
+
+        .footer-content p {
+          font-size: 11px;
         }
       }
     </style>
@@ -370,6 +397,7 @@
       <div class="footer">
         <div class="footer-content">
           <p>Dibangun dengan <i class="fas fa-heart" style="color: red"></i> oleh Tim Pengembang Jurnal</p>
+          <p>Menggunakan <a href="https://mozilla.github.io/pdf.js/" target="_blank" style="color: #4285f4; text-decoration: none">PDF.js</a> dari Mozilla</p>
         </div>
       </div>
     </div>
