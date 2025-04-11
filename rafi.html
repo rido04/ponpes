@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Author Profile</title>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background-color: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+      }
+
+      .profile-card {
+        max-width: 800px;
+        margin: 30px auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .profile-header {
+        background: #2c3e50;
+        color: white;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .author-name {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        min-height: 50px;
+      }
+
+      .author-title {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        margin-bottom: 15px;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .social-links a {
+        color: white;
+        font-size: 1.2rem;
+        transition: transform 0.3s;
+      }
+
+      .social-links a:hover {
+        transform: translateY(-3px);
+        color: #3498db;
+      }
+
+      .profile-content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .profile-image {
+        flex: 1;
+        min-width: 200px;
+        padding: 20px; /* Tambahkan padding untuk memberi jarak */
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Pastikan gambar berada di tengah */
+      }
+
+      .profile-image img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        border: 5px solid #f1f1f1;
+        object-fit: cover;
+      }
+
+      .profile-details {
+        flex: 2;
+        min-width: 300px;
+        padding: 20px;
+      }
+
+      .section-title {
+        color: #2c3e50;
+        margin: 15px 0;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #3498db;
+      }
+
+      .bio {
+        margin-bottom: 20px;
+      }
+
+      .bio ul {
+        list-style: none; /* Menghilangkan titik pada ul li */
+        padding: 0; /* Menghapus padding default */
+        margin: 0; /* Menghapus margin default */
+      }
+
+      .contact-info {
+        margin-top: 20px;
+      }
+
+      .contact-item {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+      }
+
+      .contact-item i {
+        width: 25px;
+        color: #3498db;
+        margin-right: 10px;
+      }
+
+      /* Typing animation styles */
+      .typed-cursor {
+        opacity: 1;
+        animation: blink 0.7s infinite;
+        color: #e74c3c;
+        font-size: 2rem;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .profile-content {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .author-name {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="profile-header">
+        <h1 class="author-name" id="typed-name"></h1>
+        <h2 class="author-title">Penulis</h2>
+        <div class="social-links">
+            <a href="https://wa.me/6289515128986" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="profile-content">
+        <div class="profile-image">
+          <img src="/rafi2.jpg" alt="Author Profile" />
+        </div>
+
+        <div class="profile-details">
+          <h3 class="section-title">Tentang Saya</h3>
+          <div class="bio">
+            <ul>
+                <li>Nama : Muhammad Rafi Zulfa</li>
+                <li>Kelahiran : 10 Januari 2002</li>
+                <li>Alamat : kp.pakulonan barat RT 04, RW 03. Kec.kelapa dua, kab.tangerang</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Typed.js initialization
+      document.addEventListener("DOMContentLoaded", function () {
+        const typed = new Typed("#typed-name", {
+          strings: ["Muhammad Rafi Zulfa"],
+          typeSpeed: 40,
+          backSpeed: 40,
+          loop: true,
+          showCursor: true,
+          cursorChar: "|",
+        });
+      });
+    </script>
+  </body>
+</html>
