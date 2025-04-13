@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lembur-kami.vercel.app/sitemap.xml
